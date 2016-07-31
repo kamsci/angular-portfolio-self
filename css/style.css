@@ -10,6 +10,18 @@
 .contentMain {
   position: relative;
 }
+.nav-item {
+  border: 2px solid black;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 58px;
+  padding-left: 2px;
+}
+
+.nav-item:lastchild {
+  border: none;
+}
+
 .project-nav {
   /*margin-top: 40px;*/
   text-align: right;
