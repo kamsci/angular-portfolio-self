@@ -15,6 +15,11 @@ app.config(function($stateProvider, $urlRouterProvider) {
     templateUrl: 'views/switchIt.html',
     controller: 'SwitchCtrl'
   })
+  .state('hospitalReport', {
+    url: '/hospital-report',
+    templateUrl: 'views/hospitalReport.html',
+    controller: 'HospCtrl'
+  })
 
 }); // end config
 

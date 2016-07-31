@@ -40,9 +40,9 @@
 /*////////////////
 //    main     */
 .titles {
-  font-size: 14px;
+  font-size: 16px;
   color: gray;
-  text-align: center;
+  /*text-align: center;*/
 }
 .contentSquares {
   text-align: center;
@@ -65,7 +65,7 @@
 }
 
 /*////////////////
-//  switchIt   */
+//  projects   */
 .icon {
   display: inline-block;
   margin: 10px 10px;
@@ -80,12 +80,14 @@
 }
 
 .tech {
-  margin: 20px 10px;
+  margin-top: 5px;
+  margin-right: 10px;
+  margin-bottom: 5px;
 }
 
-.image {
-  background-color: lightgray;
-  margin: 10px 20px;
+.image-box {
+  background-color: #EEE;
+  margin: 10px 0;
   padding: 20px 10px;
 }
 

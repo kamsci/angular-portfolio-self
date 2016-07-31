@@ -1,0 +1,113 @@
+<div ng-include="'views/projectNav.html'"></div>
+<!-- Title -->
+<div class="title">
+  <h1 class="inline"><a href="https://kamsci-mvc.herokuapp.com/" target="_blank"> {{ hos }}</a></h1>
+  <div class="icon pull-right"><i class="fa fa-puzzle-piece fa-3x" aria-hidden="true"></i></div>
+</div>
+
+<!-- Description -->
+<div>
+  <h3>Description</h3>
+  <p>Collecting data about your process and progress toward your goals is great, but without clear and thoughtful data visualization it's difficult to actually use. I picked a hot topic in healthcare today, patients that are being readmitted the hospital within 30 days of their release. There are 5 diagnosis that are being monitored for improvement and these 5 are represented in my data.
+  </p>
+  <p>
+  In a past career life, I worked with healthcare data to create reports for hospitals, home health agencies, long-term care facilities, and hospices to help them understand their data. Healthcare facilites are accountable to the government to improve quality and performance in order to retain full funding. You can imagine then that understanding their data and using their data to create and reach performance goals was vital.
+  </p>
+  <p>
+  In one project I had to use excel charts and a PDF printer to create meaningfull data charts for our clients. I loved createing the project and I always wondered what I could have build with dev resources. This project tests my future capabilities for dynamic visual reporting. 
+  </p>
+  <button class="btn btn-success tech">JQuery/Javascript</button>
+  <button class="btn btn-success tech">Highcharts.js</button>
+  <button class="btn btn-success tech">Node.js</button>
+  <button class="btn btn-success tech">Express.js</button>
+  <button class="btn btn-success tech">PostgreSQL</button>
+  <button class="btn btn-info tech">Materialize</button>
+  <button class="btn btn-warning tech">MVC</button>
+  <button class="btn btn-warning tech">RESTfull Routes</button>
+  <button class="btn btn-warning tech">Data Analytics</button>
+</div>
+
+<!-- Wireframes/Plan -->
+<div class="text-center image-box">
+  <img src="../img/hReportPlan.png" class="plan-img">
+  <p class="caption">For this wireframe I used Axure, which is a useful prototype software that allows to to create interactive wireframes. This is a screen shot of my <a href="http://boq901.axshare.com" target="_blank">report wireframe</a></p>.
+</div>
+
+<!-- The Approach -->
+<div>
+  <h3>The Approach</h3>
+  <div class="row">
+    <div class="col-sm-2 div-h">
+      <h4 class="approach-h">WHAT</h4>
+    </div>
+    <div class="col-sm-10">
+      <p>By law, hospital performance data is made publically available. I used two APIs from data.medicare. gov. The first to get the general data for all the hospitals and the second second to get individual the measure performance data for reporting.
+      </p>
+      <p>Some cool features are:</p>
+      <ul>
+        <li>Dynamically created gameArray and HTML board</li>
+        <li>Multiple Levels with different size boards</li>
+        <li>Ability to add levels and monsters easily in an object array and have the game include them automatically.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-2">
+      <h4 class="approach-h">WHY</h4>
+    </div>
+    <div class="col-sm-10">
+      <p>This project was approached with the Model-View-Controller and RESTful routes methods in mind. The goal was to use a database and web server to create an interactive application. Although I am not sure sure I would place the data route under the dashboard route a second time, it definately helped me undsertand more about the importance of RESTful routing. </p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-2">
+      <h4 class="approach-h">HOW</h4>
+    </div>
+    <div class="col-sm-10">
+      <p> Express.js, a module from Node.js, what what I used to set up the web service. For the apis, I used the Request module. Passport along with other custome middleware was used for authenticaion and authorization. PostgreSQL served as the database.</p>
+      <p>The most complicated (and satisfying) part of the project was writing the calculations to turn the raw data into what I needed for the Highcharts on the Dashboard. This was accomplished using Javascript and my knowledge about data analysis.</p>
+    </div>
+  </div>
+  <div>
+    <h3>Feature Backlog</h3>
+    <p>The Hospital Readmission Report was built in about 5 days. Below is the backlog of features I would add if I were to continue with this project. </p>
+    <table class="table">
+      <thead><tr>
+        <th>Feature</th>
+        <th>Effort Estimate</th>
+        <th>Priority</th>
+      </tr></thead>
+      <tbody>
+        <tr>
+          <td>Add an edit button for each dataset</td>
+          <td>SM</td>
+          <td>High</td>
+        </tr>
+        <tr>
+          <td>Default state benchmark to hospital's state</td>
+          <td>MD</td>
+          <td>High</td>
+        </tr>
+        <tr>
+          <td>Clean hospital dataset by removind hospitals without data to report</td>
+          <td>SM</td>
+          <td>Med</td>
+        </tr>
+        <tr>
+          <td>Re-evaluate my restful routes and possibly update</td>
+          <td>XLG</td>
+          <td>Med</td>
+        </tr>
+        <tr>
+          <td>Refactor hospitalization calculations to see if I can make them more DRY</td>
+          <td>MD</td>
+          <td>Med</td>
+        </tr>
+        <tr>
+          <td>Refactor CSS and User Expereince design</td>
+          <td>LG</td>
+          <td>Med</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>

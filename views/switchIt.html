@@ -1,34 +1,26 @@
-<div class="project-nav">
-  <div class="">
-    <a class="btn btn-default" href="/#/project1" role="button">switchIt</a>
-    <a class="btn btn-default" href="/#/project2" role="button">Hospital Report</a>
-    <a class="btn btn-default" href="/#/project3" role="button">Outcomes Management</a>
-  </div>
-  <!--<h3 style="display: inline" class="pull-right">Projects => </h3>-->
-</div>
-<br>
+<div ng-include="'views/projectNav.html'"></div>
 <!-- Title -->
 <div class="title">
-  <h1 class="inline">switchIT</h1>
+  <h1 class="inline"><a href="http://kamsci.github.io/SwitchIT/" target="_blank"> {{ switch }}</a></h1>
   <div class="icon pull-right"><i class="fa fa-puzzle-piece fa-3x" aria-hidden="true"></i></div>
 </div>
 
 <!-- Description -->
 <div>
   <h3>Description</h3>
-  <p class="paragraph">Inspired by fun and fast phone games like Candy Crush, MonsterBusters, or Bejeweled that people love to play for a fun distraction and a simple brain stretch!
+  <p>Inspired by fun and fast phone games like Candy Crush, MonsterBusters, or Bejeweled that people love to play for a fun distraction and a simple brain stretch!
   </p>
-  <p class="paragraph">
+  <p>
   All game pieces are present and visible at the beginning of the game. The player must reorganize the pieces so they match along an entire row or column to get points!
   </p>
-  <p class="paragraph">
+  <p>
   Reorganization is achieved in one way: Switch your key piece (top left piece in its own box) with any piece on the board.
   </p>
   <button class="btn btn-success tech">JQuery/Javascript</button><button class="btn btn-info tech">Sweet Alerts</button><button class="btn btn-warning tech">DRY code concepts</button>
 </div>
 
 <!-- Wireframes/Plan -->
-<div class="text-center image">
+<div class="text-center image-box">
   <img src="../img/switchItPlan.jpg" class="plan-img">
   <p class="caption">Above is the first wireframe and planning I did for the switchIt game. Although crude, this sketch helped me organize my thoughts and strategy before writing code.</p>
 </div>
@@ -41,9 +33,9 @@
       <h4 class="approach-h">WHAT</h4>
     </div>
     <div class="col-sm-10">
-      <p class="paragraph">I went for a clean look and feel UI-wise, and focused on making a game that can progress and grow with the user.
+      <p>I went for a clean look and feel UI-wise, and focused on making a game that can progress and grow with the user.
       </p>
-      <p class="paragraph">Some cool features are:</p>
+      <p>Some cool features are:</p>
       <ul>
         <li>Dynamically created gameArray and HTML board</li>
         <li>Multiple Levels with different size boards</li>
@@ -69,6 +61,7 @@
   </div>
   <div>
     <h3>Feature Backlog</h3>
+    <p>switchIt was built in about 5 days before I had to move on to other projects. Below is the backlog of features I would add if I were to continue with this project. </p>
     <table class="table">
       <thead><tr>
         <th>Feature</th>
