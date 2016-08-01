@@ -11,3 +11,7 @@ appC.controller('SwitchCtrl', ['$scope', function($scope) {
 appC.controller('HospCtrl', ['$scope', function($scope) {
   $scope.hos = "Hospital Readmissions Report";
 }]) // end HospCtrl
+
+appC.controller('OutcomesCtrl', ['$scope', function($scope) {
+  $scope.outcomes = "GA Outcomes Mgmt";
+}]) // end OutcomesCtrl

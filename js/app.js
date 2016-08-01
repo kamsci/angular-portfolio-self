@@ -20,6 +20,11 @@ app.config(function($stateProvider, $urlRouterProvider) {
     templateUrl: 'views/hospitalReport.html',
     controller: 'HospCtrl'
   })
+  .state('outcomes', {
+    url: '/outcomes',
+    templateUrl: 'views/outcomes.html',
+    controller: 'OutcomesCtrl'
+  })
 
 }); // end config
 

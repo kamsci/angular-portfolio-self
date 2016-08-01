@@ -5,6 +5,9 @@
 
   <title>kristaCalderon</title>
 
+  <!-- Materialize -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!-- Bootstrap -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <!-- Font Awesome -->
@@ -26,12 +29,13 @@
 <body class="container">
   <div ng-include="'views/navbar.html'"></div>
   <div class="view-container">
-<!--     <h1>Hola El Mundo</h1>
-    {{ 1 + 1 }} -->
-<!--     <div ng-controller="MainCtrl">
-    <h3>{{ test }}</h3>
-    </div> -->
+
     <div ui-view></div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <!-- Materialize -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
 
 </body>
 </html>
