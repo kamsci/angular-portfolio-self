@@ -1,8 +1,22 @@
+body {
+  background-color: #574D4F;
+  font-family: 'Muli', sans-serif;
+  /*#ECCD3D;*/
+}
+h1 h2 h3 h4 {
+  color: #CF2376 !important; 
+}
+
+.main {
+  background-color: white;
+}
 /*////////////////
 //    index    */
 .view-container {
-  margin-top: 50px;
-  margin-left: 120px;
+  padding: 41px 20px;
+  margin-left: 250px;
+  background-color: white;
+  height: 700px;
 }
 
 /*////////////////
@@ -28,23 +42,33 @@
   text-align: right;
 }
 .sidebar {
-  float: left;
-  /*margin-top: 20px;*/
+  width: 250px;
+  padding: 38px 20px;
+  /*float: left;*/
+  position: absolute;
+}
+.sidebar a {
+  color: #ABDB25;
+}
+.sidebar a:hover {
+  color: #7DB4B5;
+  text-decoration: none;
+}
+.menu:hover {
+  border-top: 2px solid #7DB4B5;
+  border-bottom: 2px solid #7DB4B5;
+}
+.name {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  color: #ABDB25;
+  margin-bottom: 50px;
+  font-size: 24px;
 }
 .item {
-  height: 60px;
-  width: 60px;
-  margin: 10px 5px;
-  /*border: 1px solid purple;*/
-}
-.sidebar img:hover {
-  border-radius: 50%;
-  box-shadow: 5px 5px #888888;
-}
-.sidebar img {
-  max-width: auto;
-  max-height: 100%;
-  margin: 0;
+  margin: auto 30px;
+  display: inline-block;
 }
 .power {
   font-size: 30px;
@@ -52,6 +76,16 @@
 .power:hover{
   color:rebeccapurple;
 }
+
+.list {
+  text-align: right;
+  margin-top: 100px;
+  font-size: 20px;
+}
+.list div {
+  padding-top: 10px;
+}
+
 
 /*.btn-floating {
   height: 50px;
@@ -64,6 +98,9 @@
   font-size: 16px;
   color: gray;
   /*text-align: center;*/
+}
+.colon {
+  color: #ABDB25;
 }
 .contentSquares {
   text-align: center;
@@ -97,7 +134,8 @@
 }
 
 .paragraph {
-  padding: 0 10px;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .tech {
