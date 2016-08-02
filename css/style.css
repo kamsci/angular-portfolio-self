@@ -12,7 +12,7 @@ body {
   padding: 41px 20px;
   margin-left: 250px;
   background-color: white;
-  min-height: 700px;
+  min-height: 800px;
 }
 
 /*////////////////
@@ -75,14 +75,14 @@ body {
 
 .list {
   text-align: right;
-  margin-top: 100px;
+  margin-top: 75px;
   font-size: 20px;
 }
 .list div {
   padding-top: 10px;
 }
 .contact {
-  margin-top: 100px;
+  margin-top: 75px;
   text-align: right;
   font-size: 16px;
 }
@@ -133,7 +133,7 @@ body {
 }
 .icon-static {
   display: inline-block;
-  margin: 10px 10px;
+  margin: 10px 20px;
   color: #88C100;
 }
 .title h1 {
@@ -163,6 +163,7 @@ body {
 }
 .sub-content {
   margin: 45px 30px;
+  max-width: 700px;
 }
 .backlog {
   margin: 50px 50px;
@@ -224,4 +225,27 @@ body {
 }
 .table {
   font-size: 14px;
+}
+
+/*////////////////
+//  resume   */
+.resume-btns {
+  text-align: center;
+}
+.btn-resume {
+  font-size: 16px;
+  border-radius: 5px;
+  margin: 30px 50px;
+  padding: 15px 10px;
+  background-color: #7DB4B5;
+}
+.btn-resume a {
+  color: #574D4F;
+  text-decoration: none;
+}
+.btn-resume:hover {
+  background-color:#88C100;
+}
+.btn-resume a:hover {
+  text-decoration: none;
 }

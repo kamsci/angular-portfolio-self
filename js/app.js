@@ -25,6 +25,10 @@ app.config(function($stateProvider, $urlRouterProvider) {
     templateUrl: 'views/outcomes.html',
     controller: 'OutcomesCtrl'
   })
+  .state('contact', {
+    url: '/contact',
+    templateUrl: 'views/contact.html'
+  })
 
 }); // end config
 
