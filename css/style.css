@@ -210,14 +210,17 @@ body {
   margin: 10px auto;
 }
 .div-h {
-  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center !important;
+  font-size: 
 }
 .approach-h {
-  margin: auto auto;
-  text-align: center;
-  position: absolute;
+ /* margin: auto auto;
+  /*text-align: center;*/
+/*  position: absolute;
   left: 50%;
-  top: 50%;
+  top: 50%;*/
 }
 .table {
   font-size: 14px;

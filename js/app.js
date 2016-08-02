@@ -6,7 +6,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
 
   $stateProvider
   .state('main', {
-    url: '/angular-portfolio-self',
+    url: '/',
     templateUrl: 'views/main.html',
     controller: 'MainCtrl'
   })
