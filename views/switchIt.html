@@ -1,23 +1,27 @@
 <!-- <div ng-include="'views/projectNav.html'"></div> -->
 <!-- Title -->
 <div class="title">
-  <h1 class="inline"><a href="http://kamsci.github.io/SwitchIT/" target="_blank"> {{ switch }}</a></h1>
-  <div class="icon pull-right"><i class="fa fa-puzzle-piece fa-3x" aria-hidden="true"></i></div>
+  <h1> :{{ switch }}</h1>
+  <div class="icon"><a href="http://kamsci.github.io/SwitchIT/" target="_blank"<i class="fa fa-link fa-lg" aria-hidden="true"></i></a></div>
+  <div class="icon"><a href="https://github.com/kamsci/SwitchIT" target="_blank"><i class="fa fa-github-alt fa-lg" aria-hidden="true"></i></a></div>
+  <div class="icon-static pull-right"><i class="fa fa-puzzle-piece fa-2x" aria-hidden="true"></i></div>
 </div>
 
 <!-- Description -->
-<div>
-  <h3>Description</h3>
-  <p>Inspired by fun and fast phone games like Candy Crush, MonsterBusters, or Bejeweled that people love to play for a fun distraction and a simple brain stretch!
+<div class="sub-content">
+  <h3 class= "sub-title">Description</h3>
+  <p class="paragraph class="paragraph" ">Inspired by fun and fast phone games like Candy Crush, MonsterBusters, or Bejeweled that people love to play for a fun distraction and a simple brain stretch!
   </p>
-  <p>
+  <p class="paragraph" >
   All game pieces are present and visible at the beginning of the game. The player must reorganize the pieces so they match along an entire row or column to get points!
   </p>
-  <p>
+  <p class="paragraph" >
   Reorganization is achieved in one way: Switch your key piece (top left piece in its own box) with any piece on the board.
   </p>
-  <button class="btn btn-success tech">Javascript/jQuery</button>
-  <button class="btn btn-info tech">Sweet Alerts</button><button class="btn btn-warning tech">DRY code concepts</button>
+  <div class="tech lang">Javascript</div>
+  <div class="tech lib">jQuery</div>
+  <div class="tech lib">Sweet Alerts</div>
+  <div class="tech concept">DRY code concepts</div>
 </div>
 
 <!-- Wireframes/Plan -->
@@ -27,17 +31,17 @@
 </div>
 
 <!-- The Approach -->
-<div>
-  <h3>The Approach</h3>
+<div class="sub-content">
+  <h3 class= "sub-title">The Approach</h3>
   <div class="row">
     <div class="col-sm-2 div-h">
       <h4 class="approach-h">WHAT</h4>
     </div>
     <div class="col-sm-10">
-      <p>I went for a clean look and feel UI-wise, and focused on making a game that can progress and grow with the user.
+      <p class="paragraph">I went for a clean look and feel UI-wise, and focused on making a game that can progress and grow with the user.
       </p>
-      <p>Some cool features are:</p>
-      <ul>
+      <p class="paragraph">Some cool features are:</p>
+      <ul class="paragraph">
         <li>Dynamically created gameArray and HTML board</li>
         <li>Multiple Levels with different size boards</li>
         <li>Ability to add levels and monsters easily in an object array and have the game include them automatically.</li>
@@ -45,28 +49,31 @@
     </div>
   </div>
   <div class="row">
-    <div class="col-sm-2">
+    <div class="col-sm-2 div-h">
       <h4 class="approach-h">WHY</h4>
     </div>
     <div class="col-sm-10">
-      <p>From the beginning, my goal was to create a game with a dynamic game board that was able to reform depending on the level requirements.</p>
+      <p class="paragraph">From the beginning, my goal was to create a game with a dynamic game board that was able to reform depending on the level requirements.</p>
     </div>
   </div>
   <div class="row">
-    <div class="col-sm-2">
+    <div class="col-sm-2 div-h">
       <h4 class="approach-h">HOW</h4>
     </div>
     <div class="col-sm-10">
-      <p>I avoided hardcoding variables and elements and set the game up to be easily scalable by pointing all my code to objects and object arrays that store information about each level.</p>
+      <p class="paragraph">I avoided hardcoding variables and elements and set the game up to be easily scalable by pointing all my code to objects and object arrays that store information about each level.</p>
     </div>
   </div>
-  <div>
-    <h3>Feature Backlog</h3>
-    <p>switchIt was built in about 5 days before I had to move on to other projects. Below is the backlog of features I would add if I were to continue with this project. </p>
+</div>
+<!-- Feature Backlog -->
+<div class="image-box">
+  <div class="sub-content">
+    <h3 class= "sub-title">Feature Backlog</h3>
+    <p class="paragraph">switchIt was built in about 5 days before I had to move on to other projects. Below is the backlog of features I would add if I were to continue with this project. </p>
     <table class="table">
       <thead><tr>
         <th>Feature</th>
-        <th>Effort Estimate</th>
+        <th>T-shirt Estimate</th>
         <th>Priority</th>
       </tr></thead>
       <tbody>
@@ -108,3 +115,4 @@
       </tbody>
     </table>
   </div>
+</div>

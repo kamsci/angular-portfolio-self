@@ -1,32 +1,44 @@
 <!-- <div ng-include="'views/projectNav.html'"></div> -->
 <!-- Title -->
 <div class="title">
-  <h1 class="inline"><a href="https://kamsci-mvc.herokuapp.com/" target="_blank"> {{ hos }}</a></h1>
-  <div class="icon pull-right"><i class="fa fa-pie-chart fa-3x" aria-hidden="true"></i></div>
+  <h1>:{{ hos }}</h1>
+  <div class="icon"><a href="https://kamsci-mvc.herokuapp.com/" target="_blank"><i class="fa fa-link fa-lg" aria-hidden="true"></i></a></div>
+  <div class="icon"><a href="https://github.com/kamsci/mvc" target="_blank"><i class="fa fa-github-alt fa-lg" aria-hidden="true"></i></a></div>
+  <div class="icon-static pull-right"><i class="fa fa-pie-chart fa-2x" aria-hidden="true"></i></div>
 </div>
 
 <!-- Description -->
-<div>
-  <h3>Description</h3>
-  <p>Login: guest@guest.com</p>
-  <p>Password: password</p>
-  <p>Collecting data about your process and progress toward your goals is great, but without clear and thoughtful data visualization it's difficult to actually use. I picked a hot topic in healthcare today, patients that are being readmitted the hospital within 30 days of their release. There are 5 diagnosis that are being monitored for improvement and these 5 are represented in my data.
+<div class="sub-content">
+  <h3 class="sub-title">Description</h3>
+  <div class="login">
+    <table>
+      <tr>
+        <td class="text-right">Login:</td>
+        <td class="login-content">guest@guest.com</td>
+      </tr>
+      <tr>
+        <td class="text-right">Password:</td>
+        <td class="login-content">password</td>
+      </tr>
+    </table>
+  </div>
+  <p class="paragraph">Collecting data about your process and progress toward your goals is great, but without clear and thoughtful data visualization it's difficult to actually use. I picked a hot topic in healthcare today, patients that are being readmitted the hospital within 30 days of their release. There are 5 diagnosis that are being monitored for improvement and these 5 are represented in my data.
   </p>
-  <p>
+  <p class="paragraph">
   In a past career life, I worked with healthcare data to create reports for hospitals, home health agencies, long-term care facilities, and hospices to help them understand their data. Healthcare facilites are accountable to the government to improve quality and performance in order to retain full funding. You can imagine then that understanding their data and using their data to create and reach performance goals was vital.
   </p>
-  <p>
+  <p class="paragraph">
   In one project I had to use excel charts and a PDF printer to create meaningfull data charts for our clients. I loved createing the project and I always wondered what I could have build with dev resources. This project tests my future capabilities for dynamic visual reporting. 
   </p>
-  <button class="btn btn-success tech">Javascript/jQuery</button>
-  <button class="btn btn-success tech">Highcharts.js</button>
-  <button class="btn btn-success tech">Node.js</button>
-  <button class="btn btn-success tech">Express.js</button>
-  <button class="btn btn-success tech">PostgreSQL</button>
-  <button class="btn btn-info tech">Materialize</button>
-  <button class="btn btn-warning tech">MVC</button>
-  <button class="btn btn-warning tech">RESTfull Routes</button>
-  <button class="btn btn-warning tech">Data Analytics</button>
+  <div class="tech lang">Javascript</div>
+  <div class="tech framewk">Node.js</div>
+  <div class="tech framewk">Express.js</div>
+  <div class="tech lib">jQuery</div>
+  <div class="tech lib">Materialize</div>
+  <div class="tech lib">Highcharts.js</div>
+  <div class="tech concept">MVC</div>
+  <div class="tech concept">RESTful Routes</div>
+  <div class="tech concept">Data Analutics</div>
 </div>
 
 <!-- Wireframes/Plan -->
@@ -36,17 +48,17 @@
 </div>
 
 <!-- The Approach -->
-<div>
-  <h3>The Approach</h3>
+<div class="sub-content">
+  <h3 class="sub-title">The Approach</h3>
   <div class="row">
     <div class="col-sm-2 div-h">
       <h4 class="approach-h">WHAT</h4>
     </div>
     <div class="col-sm-10">
-      <p>By law, hospital performance data is made publically available. I used two APIs from data.medicare. gov. The first to get the general data for all the hospitals and the second second to get individual the measure performance data for reporting.
+      <p class="paragraph">By law, hospital performance data is made publically available. I used two APIs from data.medicare. gov. The first to get the general data for all the hospitals and the second second to get individual the measure performance data for reporting.
       </p>
-      <p>Some cool features are:</p>
-      <ul>
+      <p class="paragraph">Some cool features are:</p>
+      <ul class="paragraph">
         <li>Javascript data calculation that creates benchmark data by state and by nation.</li>
         <li>Ablility to add multiple datasets to use in the report and altenate between.</li>
         <li>Interactive and easy to read Highcharts.</li>
@@ -58,7 +70,7 @@
       <h4 class="approach-h">WHY</h4>
     </div>
     <div class="col-sm-10">
-      <p>This project was approached with the Model-View-Controller and RESTful routes methods in mind. The goal was to use a database and web server to create an interactive application. Although I am not sure sure I would place the data route under the dashboard route a second time, it definately helped me undsertand more about the importance of RESTful routing. </p>
+      <p class="paragraph">This project was approached with the Model-View-Controller and RESTful routes methods in mind. The goal was to use a database and web server to create an interactive application. Although I am not sure sure I would place the data route under the dashboard route a second time, it definately helped me undsertand more about the importance of RESTful routing. </p>
     </div>
   </div>
   <div class="row">
@@ -66,13 +78,15 @@
       <h4 class="approach-h">HOW</h4>
     </div>
     <div class="col-sm-10">
-      <p> Express.js, a module from Node.js, what what I used to set up the web service. For the apis, I used the Request module. Passport along with other custome middleware was used for authenticaion and authorization. PostgreSQL served as the database.</p>
-      <p>The most complicated (and satisfying) part of the project was writing the calculations to turn the raw data into what I needed for the Highcharts on the Dashboard. This was accomplished using Javascript and my knowledge about data analysis.</p>
+      <p class="paragraph"> Express.js, a module from Node.js, what what I used to set up the web service. For the apis, I used the Request module. Passport along with other custome middleware was used for authenticaion and authorization. PostgreSQL served as the database.</p>
+      <p class="paragraph">The most complicated (and satisfying) part of the project was writing the calculations to turn the raw data into what I needed for the Highcharts on the Dashboard. This was accomplished using Javascript and my knowledge about data analysis.</p>
     </div>
   </div>
-  <div>
-    <h3>Feature Backlog</h3>
-    <p>The Hospital Readmission Report was built in about 5 days. Below is the backlog of features I would add if I were to continue with this project. </p>
+</div>
+<div class="image-box">
+  <div class="sub-content">
+    <h3 class="sub-title">Feature Backlog</h3>
+    <p class="paragraph">The Hospital Readmission Report was built in about 5 days. Below is the backlog of features I would add if I were to continue with this project. </p>
     <table class="table">
       <thead><tr>
         <th>Feature</th>
