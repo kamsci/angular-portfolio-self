@@ -11,7 +11,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
     controller: 'MainCtrl'
   })
   .state('switchIt', {
-    url: '/switchIt',
+    url: 'angular-portfolio-self/#/switchIt',
     templateUrl: 'views/switchIt.html',
     controller: 'SwitchCtrl'
   })
