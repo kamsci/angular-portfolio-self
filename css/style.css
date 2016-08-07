@@ -59,7 +59,7 @@ body {
   text-align: center;
   width: 100%;
   color: #88C100;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
   font-size: 26px;
 }
 .item {
@@ -68,16 +68,17 @@ body {
 }
 .list {
   text-align: right;
-  margin-top: 75px;
+  margin-top: 50px;
   font-size: 20px;
 }
 .list div {
   padding-top: 10px;
 }
 .contact {
-  margin-top: 75px;
+  margin-bottom: 25px;
   text-align: right;
   font-size: 16px;
+  text-align: center;
 }
 .contentMainMobile {
   display: none;
@@ -125,8 +126,8 @@ body {
     border: none;
   }
   .bookend {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 } /* end @media */
 
