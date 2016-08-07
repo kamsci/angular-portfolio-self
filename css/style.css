@@ -68,14 +68,14 @@ body {
 }
 .list {
   text-align: right;
-  margin-top: 50px;
+  margin-top: 35px;
   font-size: 20px;
 }
 .list div {
   padding-top: 10px;
 }
 .contact {
-  margin-bottom: 25px;
+  margin-bottom: 45px;
   text-align: right;
   font-size: 16px;
   text-align: center;
@@ -143,12 +143,11 @@ body {
 .colon {
   color: #ABDB25;
 }
-.tech-list {
-  list-style: none;
-}
-.tech-list li {
+/*.tech-list {
   display: inline-block;
-  margin: 10px 10px;
+}*/
+.tech-label {
+  width: 100px;
 }
 .tech-icons {
   text-align: center;
@@ -200,7 +199,7 @@ body {
   line-height: 24px;
 }
 .sub-content {
-  margin: 45px 30px;
+  margin: 40px 30px;
   max-width: 700px;
 }
 .backlog {
@@ -231,6 +230,9 @@ body {
 }
 .concept {
   background-color: #E0C890;
+}
+.database {
+  background-color: #F6C6A0;
 }
 .image-box {
   background-color: #FFFBF5;

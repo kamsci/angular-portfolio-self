@@ -9,7 +9,7 @@ appC.controller('SwitchCtrl', ['$scope', function($scope) {
 }]); // end SwitchCtrl
 
 appC.controller('HospCtrl', ['$scope', function($scope) {
-  $scope.hos = "Hospital Readmissions Report";
+  $scope.hos = "Hospitalization Report";
 }]) // end HospCtrl
 
 appC.controller('OutcomesCtrl', ['$scope', function($scope) {
