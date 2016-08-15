@@ -180,6 +180,9 @@ body {
   margin: 10px 20px;
   color: #88C100;
 }
+.name a {
+  color: #88C100;
+}
 .title h1 {
   display: inline-block;
   margin-top: 7px;
