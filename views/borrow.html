@@ -1,0 +1,121 @@
+<!-- Title -->
+<div class="title">
+  <h1>:{{ borrow }}</h1>
+  <div class="icon-static pull-right"><i class="fa fa-recycle fa-2x" aria-hidden="true"></i></div>
+  <div class="links">
+    <div class="icon"><a href="https://kamsci-mvc.herokuapp.com/" target="_blank"><i class="fa fa-link fa-lg" aria-hidden="true"></i> https://beg-borrow-never-steal.herokuapp.com/#/</a></div>
+    <div class="icon"><a href="https://github.com/kamsci/BegBorrowNeverSteal" target="_blank"><i class="fa fa-github-alt fa-lg" aria-hidden="true"></i></a></div>
+  </div>
+</div>
+
+<!-- Description -->
+<div class="sub-content">
+  <h3 class="sub-title">Description</h3>
+
+  <p class="paragraph">This app is a fun take on a common industry process: inventory tracking. Instead of creating the standard shopping cart experience, I experimented with a slightly different concept: borrowing and lending inventory among friends.
+  </p>
+  <p class="paragraph">
+  The idea is you and your friends all own various toys, tools, gagets, and media that you would be willing to lend to each other. This app is a place for you to keep inventory of all those items you would lend to a freind or could borrow from a friend. Each user can see items they can borrow separate from items they lend, or items they already have borrowed. I purposely did not include contact info in the first iteration for privacy reasons and because, as friends, you would already have their contact info.
+  </p>
+  <p class="paragraph">
+  In order to make the process easier to showcase in a portfolio, I decided not to include user authentication. If I were to release this product to actually be used, I would create a second app for production and add user authentication and profiles.
+  </p>
+  <div class="tech lang">Javascript</div>
+  <div class="tech lib">Angular</div>
+  <div class="tech lib">Gulp.js</div>
+  <div class="tech framewk">Node.js</div>
+  <div class="tech framewk">Express.js</div>
+  <div class="tech database">PostgreSQL</div>
+  <div class="tech concept">MVC</div>
+  <div class="tech concept">RESTful Routes</div>
+  <div class="tech concept">Single Page Application</div>
+</div>
+
+<!-- Wireframes/Plan -->
+<div class="text-center image-box">
+  <img src="../img/hReportPlan.png" class="plan-img">
+  <p class="caption">I used Axure to create my wireframes. Axure is a useful prototype software that allows to to create interactive wireframes. This is a screen shot of my <a href="http://wpiif7.axshare.com" target="_blank">BegBorrowNeverSteal wireframe.</a></p>.
+</div>
+
+<!-- The Approach -->
+<div class="sub-content">
+  <h3 class="sub-title">The Approach</h3>
+  <div class="row">
+    <div class="col-sm-2 div-h">
+      <h4 class="approach-h">WHAT</h4>
+    </div>
+    <div class="col-sm-10">
+      <p class="paragraph">The goal was to separate frontend action and activity from the back end. Angular is all front end, talking to Node and Express on the backend, which in turn talks to a SQL/Postgresql database.
+      </p>
+      <p class="paragraph">Some cool features are:</p>
+      <ul class="paragraph">
+        <li>Ability to add items attached to a specific user and the user can edit and delete their items</li>
+        <li>User can see items they can borrow separate from items they lend, or items they already have borrowed.</li>
+        <li>A user can select a friend to lend their item to and the freind's name will appear as the 'borrower' with the current date.</li>
+        <li>Nested Angular Views</li>
+      </ul>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-2">
+      <h4 class="approach-h">WHY</h4>
+    </div>
+    <div class="col-sm-10">
+      <p class="paragraph">When thinking about coding from a DRY, RESTfull, and MVC perspective, you want to have clear roles for each tool and not allow bleeding over. Express doesn't do any frontend routing, and Angular doesn't talk to the database. This project was an exersice in making the very front (HTML) talk to the very backend (DB) through the proper use of appropriate channels. </p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-2">
+      <h4 class="approach-h">HOW</h4>
+    </div>
+    <div class="col-sm-10">
+      <p class="paragraph"> Introducing... the PEAN stack. Postgresql - Express - Angular - Node.js with Gulp on the side for easy developer expansion.</p>
+      <p class="paragraph">Views are set up in Angular for page navigation and display of content. Angualr talks to Express.js through $http calls. Express routes are purely to take request from angular and retrieve and calculate data from the backend. All express routes start in the root folder followed by "/api/" to identify them as non-front end views.</p>
+    </div>
+  </div>
+</div>
+<div class="image-box">
+  <div class="sub-content">
+    <h3 class="sub-title">Feature Backlog</h3>
+    <p class="paragraph">I built BegBorrowNeverSteal in about 4 days. Below is the backlog of features I would add if I were to continue with this project. </p>
+    <table class="table">
+      <thead><tr>
+        <th>Feature</th>
+        <th>Effort Estimate</th>
+        <th>Priority</th>
+      </tr></thead>
+      <tbody>
+        <tr>
+          <td>Bug: After a new item is added or edited, signal Express to call the database again to trigger a change in the front end without having to switch views and come back</td>
+          <td>SM</td>
+          <td>High</td>
+        </tr>
+        <tr>
+          <td>Add user auth and profiles</td>
+          <td>LG</td>
+          <td>High</td>
+        </tr>
+        <tr>
+          <td>Ability to sort items by category and availablilty in each section </td>
+          <td>MD</td>
+          <td>High</td>
+        </tr>
+        <tr>
+          <td>Ask for items to borrow as a lender and alert all users by email: Does anyone have a ___?</td>
+          <td>XLG</td>
+          <td>Med</td>
+        </tr>
+        <tr>
+          <td>Add animations for visual fun</td>
+          <td>MD</td>
+          <td>Low</td>
+        </tr>
+        <tr>
+          <td>Allow user to enter date item was borrowed instead of auto-generating today's date</td>
+          <td>MD</td>
+          <td>Med</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

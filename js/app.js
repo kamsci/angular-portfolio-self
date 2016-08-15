@@ -25,6 +25,11 @@ app.config(function($stateProvider, $urlRouterProvider) {
     templateUrl: 'views/outcomes.html',
     controller: 'OutcomesCtrl'
   })
+  .state('borrow', {
+    url: '/borrow',
+    templateUrl: 'views/borrow.html',
+    controller: 'BorrowCtrl'
+  })
   .state('contact', {
     url: '/contact',
     templateUrl: 'views/contact.html'

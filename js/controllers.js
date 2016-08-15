@@ -15,3 +15,7 @@ appC.controller('HospCtrl', ['$scope', function($scope) {
 appC.controller('OutcomesCtrl', ['$scope', function($scope) {
   $scope.outcomes = "GA Outcomes Mgmt";
 }]) // end OutcomesCtrl
+
+appC.controller('BorrowCtrl', ['$scope', function($scope) {
+  $scope.borrow = "BegBorrowNeverSteal"
+}])

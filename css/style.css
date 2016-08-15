@@ -87,11 +87,13 @@ body {
 
 /*@media handheld, screen and (max-width: 700px) */
 
-@media only screen and (max-width: 700px), only screen and (max-device-width: 480px) {
+@media only screen and (max-width: 700px), 
+  only screen and (max-device-width: 480px) {
 
   .contentMain {
     display: none;
   }
+
   .contentMainMobile {
     display: initial;
     position: relative; 
@@ -185,7 +187,8 @@ body {
   font-size: 26px;
 }
 .links {
-  margin-left: 25px;
+  margin-left: 20px;
+  font-family: 'Muli', sans-serif;
 }
 .sub-title {
   font-size: 20px;
